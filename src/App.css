@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 .App {
   text-align: center;
 }
 h1{
   font-family: "Kalnia Glaze", serif;
   text-shadow: 4px 4px 4px pink;
+}
+body{
+  background-image: url(/images/purp.jpeg);
+  background-size: cover;
+}
+thead{
+  font-family: "Lora", serif;
 }
 .App-logo {
   height: 40vmin;
