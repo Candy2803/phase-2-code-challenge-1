@@ -1,6 +1,6 @@
 const List = ({ transactions, onDelete }) => {
     return (
-      <div className="overflow-x-auto mt-6">
+      <div className="overflow-x-auto mt-6 rounded-xl">
         <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-lg">
           <thead>
             <tr className="bg-gray-700 text-white text-left">

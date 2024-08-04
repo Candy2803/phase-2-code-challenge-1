@@ -32,9 +32,10 @@ const Home = () => {
     return (
         <div className="min-h-screen flex flex-col p-4">
             <h1 className="text-6xl font-bold text-gray-800 mb-4 text-center mt-8">BANK OF FLATIRON</h1>
-            <div className="flex justify-end mb-4">
+            <div className="flex justify-between mb-4">
+                <input type="text" placeholder='Search' className='min-w-96 rounded-3xl bg-slate-300' />
                 <button 
-                    onClick={openPopup} 
+                    onClick={openPopup}
                     className="text-white font-semibold bg-gradient-to-r from-violet-500 to-fuchsia-500 py-4 px-8 mr-9 rounded-lg shadow-lg transition duration-300 cursor-pointer"
                 >
                     New Transaction
@@ -83,10 +84,10 @@ const Home = () => {
                                 required
                             />
                         </div>
-                        <div className="flex justify-end">
+                        <div className="flex justify-center">
                             <button 
                                 type="submit" 
-                                className="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg shadow-lg transition duration-300"
+                                className="bg-purple-500 hover:bg-purple-600 min-w-40 text-white font-semibold py-2 px-4 rounded-lg shadow-lg transition duration-300"
                             >
                                 Submit
                             </button>
