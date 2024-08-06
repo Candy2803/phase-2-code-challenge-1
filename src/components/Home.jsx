@@ -60,6 +60,7 @@ const Home = () => {
             amount: ""
         });
     };
+    
 
     const deleteTransaction = (id) => {
         fetch(`http://localhost:4000/transactions/${id}`, {
