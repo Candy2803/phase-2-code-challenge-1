@@ -97,6 +97,13 @@
       "description": "soda",
       "category": "drink",
       "amount": 150
+    },
+    {
+      "id": "7ad6",
+      "date": "2024-11-22",
+      "description": "water",
+      "category": "drink",
+      "amount": 30
     }
   ]
 }

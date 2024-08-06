@@ -15,7 +15,7 @@ const List = ({ transactions, onDelete }) => {
                 </thead>
                 <tbody>
                     {transactions.map((transaction) => (
-                        <tr key={transaction.id} className="border-t border-gray-300 brightness-70 bg-transparent">
+                        <tr key={transaction.id} className="border-t border-gray-300 brightness-70 bg-black text-white">
                             <td className="py-3 px-4">{transaction.date}</td>
                             <td className="py-3 px-4">{transaction.description}</td>
                             <td className="py-3 px-4">{transaction.category}</td>
