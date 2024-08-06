@@ -60,7 +60,7 @@ const Home = () => {
             amount: ""
         });
     };
-    
+
 
     const deleteTransaction = (id) => {
         fetch(`http://localhost:4000/transactions/${id}`, {
@@ -74,7 +74,6 @@ const Home = () => {
         .catch(error => console.log("Error:", error));
     };
 
-    // Load transactions from db.json when the component mounts
     useEffect(() => {
         fetch('http://localhost:4000/transactions')
             .then(res => res.json())
