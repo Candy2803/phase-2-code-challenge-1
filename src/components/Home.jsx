@@ -13,7 +13,7 @@ const Home = () => {
     const closePopup = () => setIsOpen(false);
 
     const addTransaction = (newTransaction) => {
-        fetch("db.json", {
+        fetch("https://phase-2-code-challenge-1-pi.vercel.app/transactions", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const Home = () => {
     
 
     const deleteTransaction = (id) => {
-        fetch(`db.json/${id}`, {
+        fetch(`https://flatiron-server.vercel.app/transactions/${id}`, {
             method: "DELETE"
         })
         .then(() => {
@@ -50,7 +50,7 @@ const Home = () => {
     };
 
     useEffect(() => {
-        fetch('db.json')
+        fetch('https://flatiron-server.vercel.app/transactions')
             .then(res => res.json())
             .then(data => {
                 setTransactions(data);
