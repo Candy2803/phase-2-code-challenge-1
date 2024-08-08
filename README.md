@@ -15,7 +15,7 @@ This is a web application built with React that allows users to manage transacti
 - **View Transactions:** Users can view all transactions in a table format.
 - **Search Transactions:** Users can search for specific transactions by description or category.
 - **Delete Transaction:** Users can delete any transaction from the list.
-- ![screenshot](images/Screenshot 2024-08-08 at 14.31.00.png)
+  ![screenshot](images/Screenshot 2024-08-08 at 14.31.00.png)
 
 ## Installation
 
