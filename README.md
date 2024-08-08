@@ -9,6 +9,8 @@ This is a web application built with React that allows users to manage transacti
 - [Components](#components)
 - [Contributing](#contributing)
 
+## Display of the web
+![screenshot](./images/Screenshot%202024-08-08%20at%2014.31.00.png)
 
 ## Features
 - **Add Transaction:** Users can add new transactions by filling out a form with details like date, description, category, and amount.
