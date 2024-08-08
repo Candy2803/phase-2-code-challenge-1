@@ -13,7 +13,7 @@ const Home = () => {
     const closePopup = () => setIsOpen(false);
 
     const addTransaction = (newTransaction) => {
-        fetch("https://flatiron-server.vercel.app/transactions", {
+        fetch("https://phase-2-code-challenge-1-pi.vercel.app/transactions", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -25,10 +25,11 @@ const Home = () => {
         .then(savedTransaction => {
             setTransactions(prevTransactions => [...prevTransactions, savedTransaction]);
             setFilteredTransactions(prevTransactions => [...prevTransactions, savedTransaction]);
-            closePopup();
+            closePopup();  
         })
-        .catch(error => console.log("Error:", error));
+        .catch(error => console.error("Error:", error));
     };
+    
 
     const deleteTransaction = (id) => {
         fetch(`https://flatiron-server.vercel.app/transactions/${id}`, {
