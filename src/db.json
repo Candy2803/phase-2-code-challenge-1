@@ -1,13 +1,6 @@
 {
   "transactions": [
     {
-      "id": "3",
-      "date": "2019-12-02",
-      "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-      "category": "Food",
-      "amount": -10.55
-    },
-    {
       "id": "4",
       "date": "2019-12-04",
       "description": "Sunglasses, Urban Outfitters",
@@ -64,46 +57,32 @@
       "amount": -116.39
     },
     {
-      "id": "12",
-      "date": "2019-12-17",
-      "description": "Venmo, Pay Roommate for Rent",
-      "category": "Housing",
-      "amount": -975
-    },
-    {
-      "id": 1722918614835,
+      "id": "1722918614835",
       "date": "2024-12-23",
       "description": "Bread",
       "category": "Snack",
       "amount": 300
     },
     {
-      "id": 1722918751426,
+      "id": "1722918751426",
       "date": "2024-11-19",
       "description": "cake",
       "category": "Snack",
       "amount": 200
     },
     {
-      "id": 1722918816935,
-      "date": "1222-02-12",
-      "description": "cake",
-      "category": "Snack",
-      "amount": 200
-    },
-    {
-      "id": 1722919039048,
-      "date": "2003-10-28",
+      "id": "cfcd",
+      "date": "2003-12-22",
       "description": "soda",
       "category": "drink",
-      "amount": 150
+      "amount": 50
     },
     {
-      "id": "7ad6",
-      "date": "2024-11-22",
-      "description": "water",
-      "category": "drink",
-      "amount": 30
+      "id": "79a4",
+      "date": "2024-08-03",
+      "description": "Bread",
+      "category": "Snack",
+      "amount": 200
     }
   ]
 }
