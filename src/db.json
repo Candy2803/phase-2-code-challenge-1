@@ -83,6 +83,13 @@
       "description": "Bread",
       "category": "Snack",
       "amount": 200
+    },
+    {
+      "id": "44fa",
+      "date": "2024-08-02",
+      "description": "soda",
+      "category": "Snack",
+      "amount": 79
     }
   ]
 }

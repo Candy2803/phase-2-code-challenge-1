@@ -13,7 +13,7 @@ const Home = () => {
     const closePopup = () => setIsOpen(false);
 
     const addTransaction = (newTransaction) => {
-        fetch("https://phase-2-code-challenge-1-pi.vercel.app/transactions", {
+        fetch("https://flatiron-server.vercel.app/transactions", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
