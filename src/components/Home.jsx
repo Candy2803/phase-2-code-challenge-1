@@ -13,7 +13,7 @@ const Home = () => {
     const closePopup = () => setIsOpen(false);
 
     const addTransaction = (newTransaction) => {
-        fetch("https://phase-2-code-challenge-1-pi.vercel.app/transactions", {
+        fetch("https://flatiron-server.vercel.app/transactions", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -23,14 +23,14 @@ const Home = () => {
         })
         .then(res => res.json())
         .then(savedTransaction => {
-            console.log("Saved Transaction:", savedTransaction); // Log the server response
+            console.log("Saved Transaction:", savedTransaction); 
             setTransactions(prevTransactions => {
                 const updatedTransactions = [...prevTransactions, savedTransaction];
-                console.log("Updated Transactions:", updatedTransactions); // Log the updated transactions
+                console.log("Updated Transactions:", updatedTransactions); 
                 return updatedTransactions;
             });
             setFilteredTransactions(prevTransactions => [...prevTransactions, savedTransaction]);
-            closePopup(); // Close the popup after updating the state
+            closePopup(); 
         })
         .catch(error => console.error("Error:", error));
     };
