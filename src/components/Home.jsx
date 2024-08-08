@@ -13,7 +13,7 @@ const Home = () => {
     const closePopup = () => setIsOpen(false);
 
     const addTransaction = (newTransaction) => {
-        fetch("https://flatiron-server.vercel.app/transactions", {
+        fetch("db.json", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -23,16 +23,22 @@ const Home = () => {
         })
         .then(res => res.json())
         .then(savedTransaction => {
-            setTransactions(prevTransactions => [...prevTransactions, savedTransaction]);
+            console.log("Saved Transaction:", savedTransaction); // Log the server response
+            setTransactions(prevTransactions => {
+                const updatedTransactions = [...prevTransactions, savedTransaction];
+                console.log("Updated Transactions:", updatedTransactions); // Log the updated transactions
+                return updatedTransactions;
+            });
             setFilteredTransactions(prevTransactions => [...prevTransactions, savedTransaction]);
-            closePopup();  
+            closePopup(); // Close the popup after updating the state
         })
         .catch(error => console.error("Error:", error));
     };
     
+    
 
     const deleteTransaction = (id) => {
-        fetch(`https://flatiron-server.vercel.app/transactions/${id}`, {
+        fetch(`db.json/${id}`, {
             method: "DELETE"
         })
         .then(() => {
@@ -44,7 +50,7 @@ const Home = () => {
     };
 
     useEffect(() => {
-        fetch('https://flatiron-server.vercel.app/transactions')
+        fetch('db.json')
             .then(res => res.json())
             .then(data => {
                 setTransactions(data);
