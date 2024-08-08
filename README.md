@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Bank of Flatiron 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application built with React that allows users to manage transactions. The app includes features like adding, viewing, searching, and deleting transactions.
 
-## Available Scripts
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Contributing](#contributing)
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
+- **Add Transaction:** Users can add new transactions by filling out a form with details like date, description, category, and amount.
+- **View Transactions:** Users can view all transactions in a table format.
+- **Search Transactions:** Users can search for specific transactions by description or category.
+- **Delete Transaction:** Users can delete any transaction from the list.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
+- Node.js
+- npm (Node Package Manager)
 
-### `npm test`
+### Steps
+1. Clone the repository:
+    ```bash
+    git clone git@github.com:Candy2803/phase-2-code-challenge-1.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd phase-2-code-challenge-1
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm start
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
+Once the server is running, open your browser and navigate to `http://localhost:3000` to access the application. 
 
-### `npm run build`
+### Adding a Transaction
+- Click on the **New Transaction** button.
+- Fill in the transaction details in the popup form.
+- Click **Submit** to save the transaction.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Searching Transactions
+- Use the search bar at the top to filter transactions by description or category.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Deleting a Transaction
+- Click on the **Delete** button next to the transaction you want to remove.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Components
 
-### `npm run eject`
+### Home
+The main component that contains the logic for managing transactions. It includes state management and integrates with the API.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### List
+Renders a table with all transactions. Each transaction can be deleted from this list.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### SearchBar
+A search input component that filters the transactions based on the user's query.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### PopupModal
+A modal component that contains the form for adding new transactions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### TransactionForm
+A form component that handles user input for creating a new transaction.
 
-## Learn More
+## Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-name`).
+5. Open a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+WRITTEN BY: **CANDY WAWUDA MZUNGU**
